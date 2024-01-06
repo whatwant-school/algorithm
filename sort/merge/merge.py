@@ -4,7 +4,6 @@ def merge(inputs: list, start: int, mid: int, end: int) -> list:
 
     left.append(float("inf"))
     right.append(float("inf"))
-    
 
     left_index = right_index = 0
     for output_index in range(start, end+1):
