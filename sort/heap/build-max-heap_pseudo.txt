@@ -1,0 +1,5 @@
+BUILD-MAX-HEAP(A)
+    A.heap-size = A.length
+    for i = └ A.length / 2 ┘ downto 1
+        MAX-HEAPIFY(A, i)
+        
