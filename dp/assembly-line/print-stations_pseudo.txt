@@ -1,0 +1,6 @@
+PRINT-STATIONS(l, l*, n)
+  i = l*
+  print "line " i ", station" n
+  for j=n downto 2
+    i = l[i][j]
+    print "line " i ", station" j-1
