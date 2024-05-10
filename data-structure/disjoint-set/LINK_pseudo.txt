@@ -1,0 +1,6 @@
+LINK(x, y)
+  if x.rank > y.rank
+    y.p = x
+  else x.p = y
+    if x.rank == y.rank
+      y.rank = y.rank + 1

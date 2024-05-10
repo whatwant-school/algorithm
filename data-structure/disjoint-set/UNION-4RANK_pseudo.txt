@@ -1,0 +1,2 @@
+UNION(x, y)
+  LINK(FIND-SET(x), FIND-SET(y))

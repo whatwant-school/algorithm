@@ -1,0 +1,4 @@
+SAME-COMPONENT(u, v)
+  if FIND-SET(u) == FIND-SET(v)
+    return TRUE
+  else return FALSE

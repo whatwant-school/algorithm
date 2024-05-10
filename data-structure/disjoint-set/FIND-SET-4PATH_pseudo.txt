@@ -1,0 +1,4 @@
+FIND-SET(x)
+  if x ≠ x.p
+    x.p = FIND-SET(x.p)
+  return x.p

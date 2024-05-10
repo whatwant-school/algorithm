@@ -1,0 +1,19 @@
+BFS(G, s)
+  for each vertex u ∈ G.V - {s}
+    u.color = WHITE
+    u.d = ∞
+    u.π = NIL
+  s.color = GRAY
+  s.d = 0
+  s.π = NIL
+  Ｑ = Φ
+  ENQUEUE(Ｑ, s)
+  while Ｑ ≠ Φ
+    u = DEQUEUE(Ｑ)
+    for each v ∈ G.Adj[u]
+      if v.color == WHITE
+        v.color = GRAY
+        v.d = u.d + 1
+        v.π = u
+        ENQUEUE(Ｑ, v)
+    u.color = BLACK

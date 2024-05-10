@@ -1,0 +1,2 @@
+MAKE-SET(x)
+  x.p = x

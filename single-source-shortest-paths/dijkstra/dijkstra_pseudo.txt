@@ -1,0 +1,9 @@
+DIJKSTRA(G, w, s)
+  INITIALIZE-SINGLE-SOURCE(G, s)
+  S = Φ
+  Q = G.V
+  while Q ≠ Φ
+    u = EXTRACT-MIN(Q)
+    S = S ∪ {u}
+    for each vertex v ∈ G.Adj[u]
+      RELAX(u, v, w)

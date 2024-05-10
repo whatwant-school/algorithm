@@ -1,0 +1,6 @@
+DAG-SHORTEST-PATHS(G, w, s)
+  topologically sort the vertices of G
+  INITIALIZE-SINGLE-SOURCE(G, s)
+  for each vertex u, taken in topologically sorted order
+    for each vertex v ∈ G.Adj[u]
+      RELAX(u, v, w)

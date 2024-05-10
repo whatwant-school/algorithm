@@ -1,0 +1,6 @@
+CONNECTED-COMPONENTS(G)
+  for each vertex v ∈ G.V
+    MAKE-SET(v)
+  for each edge(u, v) ∈ G.E
+    if FIND-SET(u) ≠ FIND-SET(v)
+      UNION(u, v)
